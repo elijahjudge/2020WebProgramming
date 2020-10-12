@@ -1,0 +1,23 @@
+{
+  "name": "2020webprogramming",
+  "version": "1.0.0",
+  "description": "whatever",
+  "main": "server/index.js",
+  "dependencies": {
+    "npm": "^6.14.8"
+  }, 
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elijahjudge/2020WebProgramming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elijahjudge/2020WebProgramming/issues"
+  },
+  "homepage": "https://github.com/elijahjudge/2020WebProgramming#readme"
+}

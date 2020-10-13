@@ -1,10 +1,15 @@
 <template>
-  <div id="app">
-   <Nav />
+  
+
+  <section class="section">
+    <div class="container">
+      <Nav />
 
     <router-view/>
-    Welcome to New Paltz
-  </div>
+     
+    </div>
+  </section>
+
 </template>
 
 <script>

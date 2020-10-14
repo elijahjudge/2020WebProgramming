@@ -49,12 +49,13 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary">
+          <a class="button">
             <strong>Sign up</strong>
           </a>
-          <a class="button is-light">
-            Log in
-          </a>
+            <router-link to="/Login" class=" button is-light">
+                        Log in
+
+            </router-link> 
         </div>
       </div>
     </div>

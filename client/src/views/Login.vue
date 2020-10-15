@@ -24,7 +24,7 @@
 </div>
 <div class="field">
   <p class="control">
-    <button class="button is-success">
+    <button class="button is-success" @click.prevent="login">
       Login
     </button>
   </p>
@@ -33,10 +33,26 @@
 </template>
 
 <script>
-export default {
 
+import session from "@/models/session";
+
+export default {
+    methods: {
+        login(){
+            session.user = {
+                name: 'baby pigeon',
+                handle: 'bpbpbp',
+                profile: 'https://2.bp.blogspot.com/-y40K6_fEx5o/VkoK2OgT11I/AAAAAAAAA8o/6PY_stcfe-g/s1600/photo2.jpg'
+        
+            }
+            session.addNotification('GoodLogin ;)', 'success')
+            this.$router.push('Feed')
+        }
+    }
 }
 </script>
+
+
 
 <style>
 

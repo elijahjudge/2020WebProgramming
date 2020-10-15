@@ -4,7 +4,7 @@
 
         <Nav />
         <div class="container">
-
+          <Notifications />
         <router-view/>
         
         </div>
@@ -15,11 +15,12 @@
 
 <script>
 import Nav from "@/components/Nav";
+import Notifications from "@/components/Notifications";
 
 
 export default {
   components:{
-    Nav: Nav
+    Nav, Notifications
   }
 }
 </script>

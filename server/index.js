@@ -1,14 +1,16 @@
-const http = require('http');
+const express = require ('express')
 
-const hostname = '127.0.0.1';
+const users = require('./controllers/users');
+
+const app = express()
 const port = 3000;
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
+app.get('/', (req, res) => {
+res.send('hello friend, your not welcome' + req.url)
+})
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-}); 
+app.use('/users', users);
+
+app.listen(port, () => {
+  console.log(`app listening at http://localhost:${port}`)
+})

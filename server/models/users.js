@@ -13,5 +13,6 @@
      data.push({name,age})
  }
 
+
  
  module.exports = { getAll, add, search: async q => data.filter(x=> x.name == q) }

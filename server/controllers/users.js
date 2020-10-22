@@ -19,5 +19,6 @@ router.get('/', (req, res, next) => {
             res.send(newUser)       
         }).catch(next)
     })
+    
 
 module.exports = router;
